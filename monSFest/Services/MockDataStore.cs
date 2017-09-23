@@ -5,39 +5,40 @@ using System.Threading.Tasks;
 
 namespace monSFest
 {
-    public class MockDataStore : IDataStore<Item>
+    public class MockDataStore : IDataStore<Contact>
     {
-        List<Item> items;
+        List<Contact> items;
 
         public MockDataStore()
         {
-            items = new List<Item>();
-            var mockItems = new List<Item>
+            items = new List<Contact>();
+            var mockItems = new List<Contact>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
+                //Sample Data which will soon be replaced with List of Employee records.
+                new Contact { Id = Guid.NewGuid().ToString(), Name = "Arun", Description="PA, Salesforce-Mobility" ,phoneNumber="+91-9600155009" ,DOB ="15th August"},
+                new Contact { Id = Guid.NewGuid().ToString(), Name = "Venkat", Description="PA, Salesforce-Mobility" ,phoneNumber="+91-9600155009" ,DOB ="15th August" },
+                new Contact { Id = Guid.NewGuid().ToString(), Name = "Boopathi", Description="PA, Brazil & LATAM" ,phoneNumber="+91-9600155009" ,DOB ="15th August"},
+                new Contact { Id = Guid.NewGuid().ToString(), Name = "Palani", Description="SA, Salesforce-Mobility" ,phoneNumber="+91-9600155009" ,DOB ="15th August"},
+                new Contact { Id = Guid.NewGuid().ToString(), Name = "Sowmya", Description="PA, EMEA" ,phoneNumber="+91-9600155009" ,DOB ="15th August"},
+                new Contact { Id = Guid.NewGuid().ToString(), Name = "Srinidi", Description="PA, GVEG" ,phoneNumber="+91-9600155009" ,DOB ="15th August"},
             };
 
-            foreach (var item in mockItems)
+            foreach (var contact in mockItems)
             {
-                items.Add(item);
+                items.Add(contact);
             }
         }
 
-        public async Task<bool> AddItemAsync(Item item)
+        public async Task<bool> AddItemAsync(Contact item)
         {
             items.Add(item);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<bool> UpdateItemAsync(Item item)
+        public async Task<bool> UpdateItemAsync(Contact item)
         {
-            var _item = items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
+            var _item = items.Where((Contact arg) => arg.Id == item.Id).FirstOrDefault();
             items.Remove(_item);
             items.Add(item);
 
@@ -46,18 +47,18 @@ namespace monSFest
 
         public async Task<bool> DeleteItemAsync(string id)
         {
-            var _item = items.Where((Item arg) => arg.Id == id).FirstOrDefault();
+            var _item = items.Where((Contact arg) => arg.Id == id).FirstOrDefault();
             items.Remove(_item);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<Item> GetItemAsync(string id)
+        public async Task<Contact> GetItemAsync(string id)
         {
             return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
         }
 
-        public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<Contact>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(items);
         }

@@ -1,7 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="monSFest.ItemDetailPage" Title="{Binding Title}">
-	<StackLayout Spacing="20" Padding="15">
-		<Label Text="{Binding Item.Text}" FontSize="Medium" />
-		<Label Text="{Binding Item.Description}" FontSize="Small" />
-	</StackLayout>
+	<StackLayout >
+   <!--Top-->
+  <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+    <!-- top controls -->
+  </StackLayout>
+  <!-- Middle-->
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing = "40">
+            
+        <Label Text="{Binding Item.Name}" FontSize="Medium" HorizontalTextAlignment="Center" />
+            
+		<Label Text="{Binding Item.Description}" FontSize="Small" HorizontalTextAlignment="Center" />
+
+        <Label Text="{Binding Item.phoneNumber}" FontSize="Medium"  HorizontalTextAlignment="Center"/>
+
+        <Label Text="{Binding Item.DOB}" FontSize="Medium" HorizontalTextAlignment="Center" />
+
+       </StackLayout>
+        
+        <StackLayout >
+        <Button VerticalOptions="End" Text="Call" TextColor="White" BackgroundColor="Green" Clicked="Handle_Clicked"/>
+        </StackLayout>
+
+    </StackLayout>
 </ContentPage>

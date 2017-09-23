@@ -11,7 +11,7 @@ namespace monSFest
         {
             Title = "About";
 
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://github.com/ArunKash/monSFest")));
         }
 
         public ICommand OpenWebCommand { get; }

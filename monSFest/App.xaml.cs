@@ -13,10 +13,10 @@ namespace monSFest
         {
             InitializeComponent();
 
-            if (UseMockDataStore)
+           // if (UseMockDataStore)
                 DependencyService.Register<MockDataStore>();
-            else
-                DependencyService.Register<CloudDataStore>();
+            //else
+              //  DependencyService.Register<CloudDataStore>();
 
             if (Device.RuntimePlatform == Device.iOS)
                 MainPage = new MainPage();

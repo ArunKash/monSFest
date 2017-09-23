@@ -9,42 +9,42 @@ using Plugin.Connectivity;
 
 namespace monSFest
 {
-    public class CloudDataStore : IDataStore<Item>
+    public class CloudDataStore : IDataStore<Contact>
     {
         HttpClient client;
-        IEnumerable<Item> items;
+        IEnumerable<Contact> items;
 
         public CloudDataStore()
         {
             client = new HttpClient();
             client.BaseAddress = new Uri($"{App.BackendUrl}/");
 
-            items = new List<Item>();
+            items = new List<Contact>();
         }
 
-        public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<Contact>> GetItemsAsync(bool forceRefresh = false)
         {
             if (forceRefresh && CrossConnectivity.Current.IsConnected)
             {
                 var json = await client.GetStringAsync($"api/item");
-                items = await Task.Run(() => JsonConvert.DeserializeObject<IEnumerable<Item>>(json));
+                items = await Task.Run(() => JsonConvert.DeserializeObject<IEnumerable<Contact>>(json));
             }
 
             return items;
         }
 
-        public async Task<Item> GetItemAsync(string id)
+        public async Task<Contact> GetItemAsync(string id)
         {
             if (id != null && CrossConnectivity.Current.IsConnected)
             {
                 var json = await client.GetStringAsync($"api/item/{id}");
-                return await Task.Run(() => JsonConvert.DeserializeObject<Item>(json));
+                return await Task.Run(() => JsonConvert.DeserializeObject<Contact>(json));
             }
 
             return null;
         }
 
-        public async Task<bool> AddItemAsync(Item item)
+        public async Task<bool> AddItemAsync(Contact item)
         {
             if (item == null || !CrossConnectivity.Current.IsConnected)
                 return false;
@@ -56,7 +56,7 @@ namespace monSFest
             return response.IsSuccessStatusCode;
         }
 
-        public async Task<bool> UpdateItemAsync(Item item)
+        public async Task<bool> UpdateItemAsync(Contact item)
         {
             if (item == null || item.Id == null || !CrossConnectivity.Current.IsConnected)
                 return false;

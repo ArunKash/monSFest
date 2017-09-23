@@ -13,10 +13,13 @@ namespace monSFest
         {
             InitializeComponent();
 
-            var item = new Item
+            var item = new Contact
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+                Name = "Item 1",
+                Description = "This is an item description.",
+
+                DOB = "5th October",
+                phoneNumber = "1233456789",
             };
 
             viewModel = new ItemDetailViewModel(item);
@@ -28,6 +31,12 @@ namespace monSFest
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
+        }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            DisplayAlert("Not Yet!", "The Feature is on its Way!! Soon!!", "Okay");
+            //throw new NotImplementedException();
         }
     }
 }

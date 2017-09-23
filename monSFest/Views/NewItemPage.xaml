@@ -1,14 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="monSFest.NewItemPage" Title="New Item">
 	<ContentPage.ToolbarItems>
 		<ToolbarItem Text="Save" Clicked="Save_Clicked" />
 	</ContentPage.ToolbarItems>
 	<ContentPage.Content>
 		<StackLayout Spacing="20" Padding="15">
-			<Label Text="Text" FontSize="Medium" />
-			<Entry Text="{Binding Item.Text}" FontSize="Small" />
-			<Label Text="Description" FontSize="Medium" />
-			<Editor Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
-		</StackLayout>
+			<Label Text="Name" FontSize="Medium" />
+			<Entry Text="{Binding Item.Name}" FontSize="Small" FontAttributes="Bold"  Margin="0"  />
+			<Label Text="Description" FontSize="Medium"  />
+			<Entry Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
+            <Label Text="Phone" FontSize="Medium" />
+            <Entry Text="{Binding Item.phoneNumber}" FontSize="Small" FontAttributes="Bold"  Margin="0"  />
+            <Label Text="WhatsApp Contact" FontSize="Medium"  />
+            <Entry Text="{Binding Item.whatsApp}" FontSize="Small" Margin="0" />
+        
+        </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

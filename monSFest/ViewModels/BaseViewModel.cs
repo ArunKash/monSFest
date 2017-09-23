@@ -9,7 +9,7 @@ namespace monSFest
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public IDataStore<Contact> DataStore => DependencyService.Get<IDataStore<Contact>>() ?? new MockDataStore();
 
         bool isBusy = false;
         public bool IsBusy

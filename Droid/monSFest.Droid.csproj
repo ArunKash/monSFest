@@ -112,6 +112,7 @@
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\monSFest.png" />
   </ItemGroup>
   <Import Project="..\monSFest\monSFest.projitems" Label="Shared" Condition="Exists('..\monSFest\monSFest.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

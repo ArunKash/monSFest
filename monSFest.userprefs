@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{7BD04908-73A0-4BA6-9214-BF2E6A9D349B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/Views/ItemDetailPage.xaml.cs">
+    <Files>
+      <File FileName="monSFest/Services/CloudDataStore.cs" Line="1" Column="1" />
+      <File FileName="monSFest/Services/MockDataStore.cs" Line="17" Column="10" />
+      <File FileName="monSFest/Services/IDataStore.cs" Line="9" Column="47" />
+      <File FileName="monSFest/ViewModels/AboutViewModel.cs" Line="18" Column="6" />
+      <File FileName="monSFest/ViewModels/BaseViewModel.cs" Line="18" Column="52" />
+      <File FileName="monSFest/ViewModels/ItemDetailViewModel.cs" Line="8" Column="56" />
+      <File FileName="monSFest/ViewModels/ItemsViewModel.cs" Line="38" Column="31" />
+      <File FileName="monSFest/Views/AboutPage.xaml" Line="61" Column="1" />
+      <File FileName="monSFest/Views/AboutPage.xaml.cs" Line="1" Column="14" />
+      <File FileName="monSFest/Views/ItemDetailPage.xaml" Line="14" Column="94" />
+      <File FileName="monSFest/Views/MainPage.cs" Line="31" Column="42" />
+      <File FileName="monSFest/Views/ItemsPage.xaml.cs" Line="22" Column="52" />
+      <File FileName="monSFest/Views/NewItemPage.xaml" Line="20" Column="1" />
+      <File FileName="monSFest/Views/NewItemPage.xaml.cs" Line="21" Column="30" />
+      <File FileName="monSFest/Views/ItemDetailPage.xaml.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.monSFest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DFE9F6B6-5DFB-4205-809F-4E016E3E3E63">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.monSFest.iOS>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.monSFest.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+</Properties>

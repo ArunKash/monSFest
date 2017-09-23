@@ -4,10 +4,10 @@ namespace monSFest
 {
     public class ItemDetailViewModel : BaseViewModel
     {
-        public Item Item { get; set; }
-        public ItemDetailViewModel(Item item = null)
+        public Contact Item { get; set; }
+        public ItemDetailViewModel(Contact item = null)
         {
-            Title = item?.Text;
+            Title = item?.Name;
             Item = item;
         }
     }

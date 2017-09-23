@@ -15,7 +15,7 @@ namespace monSFest
                 case Device.iOS:
                     itemsPage = new NavigationPage(new ItemsPage())
                     {
-                        Title = "Browse"
+                        Title = "Contacts"
                     };
 
                     aboutPage = new NavigationPage(new AboutPage())
@@ -28,7 +28,7 @@ namespace monSFest
                 default:
                     itemsPage = new ItemsPage()
                     {
-                        Title = "Browse"
+                        Title = "Contacts"
                     };
 
                     aboutPage = new AboutPage()

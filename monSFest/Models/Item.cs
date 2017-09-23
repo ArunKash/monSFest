@@ -2,10 +2,16 @@
 
 namespace monSFest
 {
-    public class Item
+    public class Contact
     {
         public string Id { get; set; }
-        public string Text { get; set; }
+        public string Name { get; set; }
         public string Description { get; set; }
-    }
+		public string phoneNumber { get; set; }
+		public string whatsApp { get; set; }
+		public string employeeID { get; set; }
+		public string DOB { get; set; }
+
+
+	}
 }
