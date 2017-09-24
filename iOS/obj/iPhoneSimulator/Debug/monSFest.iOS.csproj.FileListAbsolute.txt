@@ -77,3 +77,7 @@
 /Users/526721/Documents/Personal POC/monSFest/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0/optimized/monSFest@3x.png
 /Users/526721/Documents/Personal POC/monSFest/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0/optimized/monSFest.png
 /Users/526721/Documents/Personal POC/monSFest/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.0/optimized/
+/Users/526721/Documents/Personal POC/monSFest/iOS/obj/iPhoneSimulator/Debug/monSFest.iOS.Views.InitialPleaseWait.xaml.g.cs
+/Users/526721/Documents/Personal POC/monSFest/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.dll
+/Users/526721/Documents/Personal POC/monSFest/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.IOS.dll
+/Users/526721/Documents/Personal POC/monSFest/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.Platform.dll

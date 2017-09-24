@@ -103,10 +103,36 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Rg.Plugins.Popup">
+      <HintPath>..\packages\Rg.Plugins.Popup.1.0.4\lib\Xamarin.IOS\Rg.Plugins.Popup.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup.IOS">
+      <HintPath>..\packages\Rg.Plugins.Popup.1.0.4\lib\Xamarin.IOS\Rg.Plugins.Popup.IOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup.Platform">
+      <HintPath>..\packages\Rg.Plugins.Popup.1.0.4\lib\Xamarin.IOS\Rg.Plugins.Popup.Platform.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage %281%29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage %282%29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage %283%29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage %284%29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage %285%29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon-2.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Image.imageset\monSFest%402x.png" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Image.imageset\monSFest%403x.png" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Image.imageset\monSFest.png" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Image-1.imageset\Contents.json" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Image-1.imageset\monSFest%402x.png" />
+    <ImageAsset Include="Resources\monSFest.iOS\Images.xcassets\Image-1.imageset\monSFest%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_about.png" />

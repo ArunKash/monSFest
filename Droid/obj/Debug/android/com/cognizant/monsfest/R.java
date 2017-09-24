@@ -2560,8 +2560,10 @@ containing a value of this type.
         public static final int mr_ic_pause_light=0x7f02009f;
         public static final int mr_ic_play_dark=0x7f0200a0;
         public static final int mr_ic_play_light=0x7f0200a1;
-        public static final int notification_template_icon_bg=0x7f0200a3;
-        public static final int xamarin_logo=0x7f0200a2;
+        public static final int notification_template_icon_bg=0x7f0200a5;
+        public static final int splash_screen=0x7f0200a2;
+        public static final int splash_screen1=0x7f0200a3;
+        public static final int xamarin_logo=0x7f0200a4;
     }
     public static final class id {
         public static final int action0=0x7f07008b;
@@ -2992,6 +2994,7 @@ containing a value of this type.
         /**  Base theme applied no matter what API 
          */
         public static final int MyTheme_Base=0x7f0a0173;
+        public static final int MyTheme_Splash=0x7f0a0175;
         public static final int Platform_AppCompat=0x7f0a0032;
         public static final int Platform_AppCompat_Light=0x7f0a0033;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f0a0095;

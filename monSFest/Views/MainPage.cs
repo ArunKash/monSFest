@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
 
 namespace monSFest
@@ -48,6 +48,12 @@ namespace monSFest
         {
             base.OnCurrentPageChanged();
             Title = CurrentPage?.Title ?? string.Empty;
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            App.Current.MainPage.Navigation.PopAllPopupAsync();
+
         }
     }
 }

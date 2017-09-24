@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Rg.Plugins.Popup;
 using Foundation;
 using UIKit;
 
@@ -14,7 +14,8 @@ namespace monSFest.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+			//to use the Rg.Popup plugin
+			Rg.Plugins.Popup.IOS.Popup.Init();
 
 
             return base.FinishedLaunching(app, options);

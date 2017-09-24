@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventoryManager.WaitPopUp"
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+              BackgroundColor="#20a2d3">-->
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="monSFest.InitialPleaseWait"
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+              BackgroundColor="#F2F2F2">
+  <!--#F2F2F2-->
+  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <ActivityIndicator Color = "Black" IsRunning="True"  VerticalOptions="Center" HorizontalOptions="Center" />
+    <!--<Image Source="Salesforce2.png"/>-->
+    <!--<Image Source="ConnectINTag.png"/>-->
+    <!--<Frame HeightRequest="100" WidthRequest="325" OutlineColor="#F2F2F2"  HasShadow="False" BackgroundColor="#F2F2F2">-->
+    <Image Source="monSFest.png" HeightRequest="100" WidthRequest="315"></Image>
+    <!--</Frame>-->
+    <StackLayout Spacing="0" Padding="150,0,0,0" >
+      <!--<Label x:Name="lblMsg" Text="Loading Dashboard Please wait..."></Label>-->
+      <Label x:Name="lblMsg" Text="Geting You Started . . ." TextColor="Black" ></Label>
+    </StackLayout>
+  </StackLayout>
+</pages:PopupPage>

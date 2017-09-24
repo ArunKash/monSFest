@@ -7,7 +7,8 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <application android:label="monSFest" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="monSFest.Droid" android:theme="@style/MyTheme" android:name="md59b5aed3db11247f2bfc621dada3415fc.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="monSFest.Droid" android:theme="@style/MyTheme" android:name="md59b5aed3db11247f2bfc621dada3415fc.MainActivity" />
+    <activity android:icon="@drawable/icon" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md59b5aed3db11247f2bfc621dada3415fc.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
