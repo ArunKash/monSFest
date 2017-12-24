@@ -26,9 +26,10 @@ namespace monSFest
                 System.Diagnostics.Debug.Print("Could Not Put it !!");
             }
             if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new MainPage();
+                MainPage = new LoginControls.LoginPage("https://login.salesforce.com");
             else
-                MainPage = new NavigationPage(new MainPage());
+                MainPage = new NavigationPage(new LoginControls.LoginPage("https://login.salesforce.com"));
+            MainPage.Title = "Admin Login";
         }
         void displayPopUp(){
 			App.Current.MainPage.Navigation.PushPopupAsync(new InitialPleaseWait());
