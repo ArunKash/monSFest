@@ -19,7 +19,7 @@
     <!--</Frame>-->
     <StackLayout Spacing="0" Padding="150,0,0,0" >
       <!--<Label x:Name="lblMsg" Text="Loading Dashboard Please wait..."></Label>-->
-      <Label x:Name="lblMsg" Text="Geting You Started . . ." TextColor="Black" ></Label>
+      <Label x:Name="lblMsg" Text="{Binding Label}" TextColor="Black" ></Label>
     </StackLayout>
   </StackLayout>
 </pages:PopupPage>
