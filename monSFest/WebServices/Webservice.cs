@@ -10,7 +10,7 @@ using monSFest.Entity;
 using Newtonsoft.Json;
 using Xamarin.Forms;
 using System.Threading;
-//using ModernHttpClient;
+using ModernHttpClient;
 
 //using Salesforce;
 //using InventoryManager.Models;
@@ -678,9 +678,7 @@ namespace monSFest.WebServices
             }
             else
             {
-                authClient = new HttpClient(new HttpClientHandler{
-                    //Some Settings if needed.
-                });
+                authClient = new HttpClient(new NativeMessageHandler());
             }
 
 
@@ -783,9 +781,7 @@ namespace monSFest.WebServices
             }
             else
             {
-                queryClient = new HttpClient(new HttpClientHandler { 
-                //Some Settings if needed.
-                });
+                queryClient = new HttpClient(new NativeMessageHandler());
             }
 
             queryClient.Timeout = TimeSpan.FromMinutes(5);
@@ -951,7 +947,7 @@ namespace monSFest.WebServices
             }
             else
             {
-                queryClient = new HttpClient(new HttpClientHandler());
+                queryClient = new HttpClient(new NativeMessageHandler());
             }
 
             queryClient.Timeout = TimeSpan.FromMinutes(5);
@@ -1091,7 +1087,7 @@ namespace monSFest.WebServices
             }
             else
             {
-                queryClient = new HttpClient(new HttpClientHandler());
+                queryClient = new HttpClient(new NativeMessageHandler());
             }
 
             queryClient.Timeout = TimeSpan.FromMinutes(5);

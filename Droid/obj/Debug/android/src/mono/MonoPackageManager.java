@@ -100,7 +100,9 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "monSFest.Droid.dll" comes first in this list. */
 		"monSFest.Droid.dll",
 		"FormsViewGroup.dll",
+		"ModernHttpClient.dll",
 		"Newtonsoft.Json.dll",
+		"OkHttp.dll",
 		"Plugin.Connectivity.Abstractions.dll",
 		"Plugin.Connectivity.dll",
 		"Rg.Plugins.Popup.dll",

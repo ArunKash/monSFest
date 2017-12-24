@@ -2,13 +2,15 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Plugin.Connectivity/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Droid/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Platform/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/ModernHttpClient/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Plugin.Connectivity/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Droid/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Platform/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/ModernHttpClient/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.Connectivity/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Rg.Plugins.Popup.Droid/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Rg.Plugins.Popup.Platform/library_project_imports/assets</ResolvedAssetDirectory>
@@ -17,10 +19,11 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Droid.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/ModernHttpClient.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Droid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Rg.Plugins.Popup.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

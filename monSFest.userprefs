@@ -1,37 +1,20 @@
 ﻿<Properties StartupConfiguration="{7BD04908-73A0-4BA6-9214-BF2E6A9D349B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/WebServices/Webservice.cs">
     <Files>
       <File FileName="monSFest/Views/MainPage.cs" Line="55" Column="64" />
       <File FileName="Droid/Resources/values/styles.xml" Line="34" Column="11" />
       <File FileName="Droid/MainActivity.cs" Line="13" Column="64" />
-      <File FileName="monSFest/Views/ItemsPage.xaml" Line="7" Column="16" />
-      <File FileName="monSFest/Views/ItemDetailPage.xaml" Line="3" Column="14" />
-      <File FileName="monSFest/Views/AboutPage.xaml" Line="6" Column="7" />
+      <File FileName="monSFest/Views/ItemsPage.xaml" Line="24" Column="1" />
+      <File FileName="monSFest/Views/ItemDetailPage.xaml" Line="27" Column="1" />
+      <File FileName="monSFest/Views/AboutPage.xaml" Line="62" Column="1" />
       <File FileName="monSFest/Views/InitialPleaseWait.xaml" Line="25" Column="19" />
       <File FileName="Droid/SplashActivity.cs" Line="26" Column="6" />
-      <File FileName="monSFest/App.xaml" Line="14" Column="53" />
+      <File FileName="monSFest/App.xaml" Line="19" Column="1" />
       <File FileName="Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
-      <File FileName="iOS/Info.plist" />
+      <File FileName="monSFest/WebServices/Webservice.cs" Line="13" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="monSFest" expanded="True">
-            <Node name="monSFest" expanded="True">
-              <Node name="Views" expanded="True" />
-            </Node>
-            <Node name="monSFest.Droid" expanded="True">
-              <Node name="Properties" expanded="True" />
-            </Node>
-            <Node name="monSFest.iOS" expanded="True">
-              <Node name="Info.plist" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -40,5 +23,5 @@
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.monSFest.iOS>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.monSFest.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.monSFest.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>
