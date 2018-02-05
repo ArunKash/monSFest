@@ -11,17 +11,17 @@
 namespace monSFest {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/526721/Documents/Personal POC/monSFest/monSFest/Views/InitialPleaseWait.xa" +
-        "ml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/monSFest/Views/Init" +
+        "ialPleaseWait.xaml")]
     public partial class InitialPleaseWait : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label lblMsg;
+        private global::Xamarin.Forms.Label lbl_msg;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(InitialPleaseWait));
-            lblMsg = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lblMsg");
+            lbl_msg = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_msg");
         }
     }
 }

@@ -12,6 +12,7 @@ namespace monSFest.LoginControls
 		public string UserName { get; set; }
 		public string Password { get; set; }
 		public string Token { get; set; }
+		public string authURL { get; set; }
 
 		public string code { get; set; }
 		public string sfdc_community_url { get; set; }
@@ -54,13 +55,13 @@ namespace monSFest.LoginControls
 		public ConnectionInfos()
 		{
 			//set OAuth key and secret variables
-			const string sfdcConsumerKeyDev = "3MVG9zlTNB8o8BA2ZCemT3xtcVRuyxoegjFfhiHp9YB4AW692oKvacVdZvfmSjEjCTqiXokQLfQ==";
-			const string sfdcConsumerSecretDev = "7521145681416292618";
-
+			const string sfdcConsumerKeyDev = "3MVG9d8..z.hDcPLjjwItMD.QX0DI9eD.JHDvPna91GydFUThUKlqr.hPoEqF8nUHYukb.bJ9l3jxLRLVly53";
+			const string sfdcConsumerSecretDev = "3100585937607471396";
+            const string authUrl = "https://monsfest-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=";
 			//set to Force.com user account that has API access enabled
-			const string sfdcUserName = "dev-work@cts.com";
-			const string sfdcPassword = "Monsfest#2";
-			const string sfdcToken = "ukIBD3QEDVdhgimrqxek9spOg";
+			const string sfdcUserName = "mobile-users@monsfest.com";
+			const string sfdcPassword = "monSFest#2018";
+			const string sfdcToken = "9DuZ2Dy72BONlEF5QcoeEouX";
 
 			//given by Dev Goyal for QA       
 			//const string sfdcConsumerKeyQA = "3MVG9pHRjzOBdkd8xU6Dxo9qLhrz78ob_A99x3EmZdw8fYzb83baLYTPLnaBFpy492pWJTpX9zdH9ftlBqjlI";
@@ -83,7 +84,7 @@ namespace monSFest.LoginControls
 			else
 			{*/
 				//By Defauld point to Development
-				init(sfdcConsumerKeyDev, sfdcConsumerSecretDev, sfdcUserName, sfdcPassword, sfdcToken);
+				init(sfdcConsumerKeyDev, sfdcConsumerSecretDev, sfdcUserName, sfdcPassword, sfdcToken, authUrl );
 			//}
 		}
 
@@ -92,14 +93,14 @@ namespace monSFest.LoginControls
 			init(consumerKey, ConsumerSecret, userName, password, token);
 		}
     */
-		private void init(string consumerKey, string consumerSecret, string userName, string password, string token)
+        private void init(string consumerKey, string consumerSecret, string userName, string password, string token, string auth)
 		{
 			ConsumerKey = consumerKey;
 			ConsumerSecret = consumerSecret;
 			UserName = userName;
 			Password = password;
 			Token = token;
-
+            authURL = auth;
 
 		}
 

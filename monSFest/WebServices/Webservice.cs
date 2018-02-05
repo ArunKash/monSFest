@@ -6,6 +6,7 @@ using System.Net.Http;
 using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using monSFest.Entity;
+using System.Net;
 //using InventoryManager.Entity.Params;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -18,6 +19,7 @@ using ModernHttpClient;
 //using InventoryManager.Common;
 using System.Linq;
 using monSFest.LoginControls;
+using monSFest.JsonParsing;
 namespace monSFest.WebServices
 {
     
@@ -41,7 +43,7 @@ namespace monSFest.WebServices
         //private const string UrlAuthSuccess = "https://usliondev-mon.cs1.force.com/services/oauth2/success";
         //private const string UrlAuthToken = "https://usliondev-mon.cs1.force.com/wheatComm/services/oauth2/token";
 
-        private const string UrlAuthClientOld = "https://login.salesforce.com/services/oauth2/token";
+        private const string UrlAuthClientOld = "https://monsfest-dev-ed.my.salesforce.com/services/oauth2/token";
 
         //private const string UrlAuthClient = @"https://usqa-mon.cs3.force.com/wheat/services/oauth2/authorize?response_type=code&client_id={0}&redirect_uri={1}";
         //public const string UrlAuthSuccess = "https://test.salesforce.com/services/oauth2/success";
@@ -49,7 +51,9 @@ namespace monSFest.WebServices
         //private const string UrlAuthToken = "https://usqa-mon.cs3.force.com/wheat/services/oauth2/token";
         //public const string URLLogOut = "https://usqa-mon.cs3.force.com/wheat/secur/logout.jsp";
 
-        private const string UrlBase = "/services/apexrest/";
+        private const string UrlBase = "/services/apexrest/Monsfest/";
+        private const string DataServices = "/services/data/v41.0/";
+
         private const string AutorizationWord = "Authorization";
         private const string BearerWord = "Bearer ";
         private const string AppJSonWord = "application/json";
@@ -744,12 +748,40 @@ namespace monSFest.WebServices
                                        UserInfos.Instance.ToString();
                 
                     System.Diagnostics.Debug.WriteLine("Auth Result"+LastResultString);
+
+
+
                 
                 }
             }
 
             return isConnected;
         }
+
+        public async Task<bool> LoadUsers () {
+            bool connected = await Connect(LoginControls.ConnectionInfos.Instance);
+            if(connected) {
+                GetMobileUsersJSON users = await GetMobileUserDetails();
+            }
+            return connected;
+        }
+        #endregion
+        #region "SOQL request maker"
+        public async Task<bool> MakeRequest(string query) {
+
+            bool connected = await Connect(LoginControls.ConnectionInfos.Instance);
+            if(connected) {
+                //services/data/v20.0/query/?q=SELECT+name+from+Account
+                string request = WebUtility.UrlEncode(query);
+
+                string result = await GetData(DataServices,"query/?q=",request);
+
+                System.Diagnostics.Debug.WriteLine("Res"+result);
+            }
+            return connected;
+
+        }
+
 
         #endregion
 
@@ -760,18 +792,18 @@ namespace monSFest.WebServices
         /// <param name="locationURL"></param>
         /// <param name="queryURL"></param>
         /// <returns></returns>
-        private async Task<string> GetData(string locationURL, string queryURL, CancellationToken cancellationToken = new CancellationToken())
+        private async Task<string> GetData(string service,string locationURL, string queryURL, CancellationToken cancellationToken = new CancellationToken())
         {
             HttpResponseMessage response;
 
             string result = string.Empty;
-           
+
             if (string.IsNullOrEmpty(serviceUrl))
             {
                 serviceUrl = UserInfos.Instance.instance_url;
             }
 
-            string restQuery = serviceUrl + UrlBase + locationURL + queryURL;
+            string restQuery = serviceUrl + service + locationURL + queryURL;
             LastQueryURL = restQuery;
 
             HttpClient queryClient = null;
@@ -825,16 +857,16 @@ namespace monSFest.WebServices
 
                 if (result.Contains("INVALID_SESSION_ID"))
                 {
-                    
+
                     {
                         System.Diagnostics.Debug.WriteLine("GetData - result - " + result);
                         System.Diagnostics.Debug.WriteLine("GetData - INVALID_SESSION_ID");
                     }
                     // Try refresh to token
-                  //  bool isTokenRefreshed = await RefreshQA();
+                    //  bool isTokenRefreshed = await RefreshQA();
 
                     {
-                     //   System.Diagnostics.Debug.WriteLine("GetData - INVALID_SESSION_ID - isTokenRefreshed - " + Convert.ToString(isTokenRefreshed));
+                        //   System.Diagnostics.Debug.WriteLine("GetData - INVALID_SESSION_ID - isTokenRefreshed - " + Convert.ToString(isTokenRefreshed));
                     }
                     //if (isTokenRefreshed)
                     {
@@ -850,7 +882,7 @@ namespace monSFest.WebServices
                         catch (OperationCanceledException ex)
                         {
                             var msg = ex.Message;
-                           
+
                             {
                                 System.Diagnostics.Debug.WriteLine("OperationCanceledException - " + msg);
                             }
@@ -882,7 +914,7 @@ namespace monSFest.WebServices
                 {
                     // Try refresh to token
                     //bool isTokenRefreshed = await RefreshQA();
-                   // if (isTokenRefreshed)
+                    // if (isTokenRefreshed)
                     {
                         try
                         {
@@ -965,7 +997,7 @@ namespace monSFest.WebServices
             // Body Content JSON Values
             StringContent bodyContent = new StringContent(postBody, Encoding.UTF8, AppJSonWord);
 
-           
+
             {
                 System.Diagnostics.Debug.WriteLine("PostData - restQuery - " + restQuery);
                 System.Diagnostics.Debug.WriteLine("PostData - access_token - " + UserInfos.Instance.access_token);
@@ -994,7 +1026,7 @@ namespace monSFest.WebServices
                 //System.Diagnostics.Debug.WriteLine("PostData - result - " + result);
                 if (result.Contains("INVALID_SESSION_ID"))
                 {
-                    
+
                     {
                         System.Diagnostics.Debug.WriteLine("PostData - result - " + result);
                     }
@@ -1197,16 +1229,16 @@ namespace monSFest.WebServices
 
             return result;
         }
-		#endregion
+        #endregion
 
-		#region " Private Methods "
+        #region " Private Methods "
 
-		/// <summary>
-		/// Verify if a string is null or empty
-		/// </summary>
-		/// <param name="text"></param>
-		/// <returns>Boolean</returns>
-		private bool StringIsNullOrEmpty(string text)
+        /// <summary>
+        /// Verify if a string is null or empty
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns>Boolean</returns>
+        private bool StringIsNullOrEmpty(string text)
 		{
 			if ((text == null) || (text == String.Empty))
 			{
@@ -1219,7 +1251,44 @@ namespace monSFest.WebServices
 		}
         #endregion
 
+        #region
 
+
+        #endregion
+
+        public async Task<GetMobileUsersJSON> GetMobileUserDetails() {
+			
+            string result = string.Empty;
+			
+            string resourceURL = "mobileUsers/";
+
+            result = await GetData(UrlBase,resourceURL, "");
+
+            GetMobileUsersJSON userJSON = new GetMobileUsersJSON();
+
+            if (result.Length>0) {
+                userJSON = JsonConvert.DeserializeObject<GetMobileUsersJSON>(result);
+                UserInfos.Instance.users = userJSON.userDetails.ToList();
+                MessagingCenter.Send<WebServices.Webservice>(this, "LoginPopUpRemoval");
+
+            }
+
+
+
+            userJSON = JsonConvert.DeserializeObject<GetMobileUsersJSON>(result);
+
+
+			/*if (IsResultValid(result))
+			{
+				getAccountReceiveShipJSON = JsonConvert.DeserializeObject<GetAccountReceiveShipJSON>(result);
+			}
+			else
+			{
+				getAccountReceiveShipJSON.ErrorsReturn = ReturnErrorJSON(result);
+			}*/
+
+			return userJSON;
+        }
 
         /*  public async Task<UserDetails> GetUserDetails()
           {
@@ -1265,8 +1334,8 @@ namespace monSFest.WebServices
                   if (result.Contains("Session expired"))
                   {
                       // Try refresh to token
-                      bool isTokenRefreshed = await RefreshQA();
-                      if (isTokenRefreshed)
+                      //bool isTokenRefreshed = await RefreshQA();
+                      //if (isTokenRefreshed)
                       {
                           try
                           {

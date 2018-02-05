@@ -130,3 +130,5 @@
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/splash_screen.png
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/R.cs.flag
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/uploadflags.txt
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Pages.LoginPage.xaml.g.cs
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Pages.WebPageRenderer.xaml.g.cs

@@ -9,7 +9,16 @@ namespace monSFest
         public MainPage()
         {
             Page itemsPage, aboutPage = null;
-
+            //INavigation Navigation = new INavigation();
+            try
+            {
+                //code to initiate popup
+                System.Diagnostics.Debug.WriteLine("Nav" + Navigation);
+                Navigation.PushPopupAsync(new InitialPleaseWait("Getting Started.."));
+            }
+            catch{
+                System.Diagnostics.Debug.WriteLine("Nope");
+            }
             switch (Device.RuntimePlatform)
             {
                 case Device.iOS:

@@ -4,6 +4,8 @@ using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
 using monSFest.WebServices;
 using System.Threading.Tasks;
+using monSFest.JsonParsing;
+using monSFest.LoginControls;
 
 namespace monSFest
 {
@@ -25,17 +27,23 @@ namespace monSFest
                 displayPopUpWithMessage("Live a Little!");
             }
             catch(Exception e){
+                //No Navigation
                 System.Diagnostics.Debug.Print("Could Not Put it !!"+e.Message+e.Source+e);
             }
-            if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new MainPage();
-                //MainPage = new LoginControls.LoginPage("https://login.salesforce.com");
-            else
-                MainPage = new NavigationPage(new MainPage());
-            Task<bool> Success = WebServices.Webservice.Instance.Connect(LoginControls.ConnectionInfos.Instance);
 
-			//WebServices.Webservice.Instance.Connect(LoginControls.ConnectionInfos.Instance);
-			MainPage = new NavigationPage(new LoginControls.LoginPage("https://login.salesforce.com"));
+            if (Device.RuntimePlatform == Device.iOS)
+                MainPage = new Pages.LoginPage();
+
+            //MainPage = new Pages.LoginPage();
+            //MainPage = new MainPage();
+
+            //MainPage = new LoginControls.LoginPage("https://login.salesforce.com");
+            else
+                MainPage = new NavigationPage(new Pages.LoginPage());
+                //MainPage = new NavigationPage(new Pages.LoginPage());
+            
+            //Task<GetMobileUsersJSON> users = WebServices.Webservice.Instance.GetMobileUserDetails();
+			//MainPage = new NavigationPage(new LoginControls.LoginPage("https://login.salesforce.com"));
             MainPage.Title = "Admin Login";
         }
         void displayPopUp(){
@@ -49,7 +57,10 @@ namespace monSFest
 
             App.Current.MainPage.Navigation.PushPopupAsync(page);
 
-		}
+        }
+        void performInitialSyncTasks(){
+            
+        }
 
     }
 }

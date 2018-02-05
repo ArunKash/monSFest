@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using monSFest.JsonParsing;
 namespace monSFest.LoginControls
 {
     
@@ -31,7 +32,7 @@ namespace monSFest.LoginControls
 			public bool IsOffline { get; set; }
 			public bool IsFirstSynced { get; set; }
 			public bool IsOfflineToOnline { get; set; }
-
+        public List<MobilityUser> users { get; set; }
 			private bool isSyncing;
 			public bool IsSyncing
 			{

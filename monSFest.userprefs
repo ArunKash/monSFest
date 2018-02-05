@@ -1,27 +1,31 @@
-﻿<Properties StartupConfiguration="{7BD04908-73A0-4BA6-9214-BF2E6A9D349B}|Default">
+﻿<Properties StartupConfiguration="{BB74E22B-E3E3-4BFD-A848-A98A9D3643EB}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/WebServices/Webservice.cs">
     <Files>
-      <File FileName="monSFest/Views/MainPage.cs" Line="55" Column="64" />
-      <File FileName="Droid/Resources/values/styles.xml" Line="34" Column="11" />
-      <File FileName="Droid/MainActivity.cs" Line="13" Column="64" />
-      <File FileName="monSFest/Views/ItemsPage.xaml" Line="24" Column="1" />
+      <File FileName="monSFest/Views/MainPage.cs" Line="7" Column="35" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="monSFest/Views/InitialPleaseWait.xaml.cs" Line="22" Column="51" />
+      <File FileName="monSFest/Views/InitialPleaseWait.xaml" Line="28" Column="19" />
+      <File FileName="monSFest/Pages/LoginPage.xaml.cs" Line="33" Column="72" />
+      <File FileName="monSFest/WebServices/Webservice.cs" Line="785" Column="1" />
+      <File FileName="monSFest/JsonParsing/GetMobileUsersJSON.cs" Line="10" Column="15" />
+      <File FileName="monSFest/LoginControls/ConnectionInfos.cs" Line="64" Column="56" />
+      <File FileName="monSFest/LoginControls/UserInfos.cs" Line="35" Column="35" />
+      <File FileName="monSFest/Views/NewItemPage.xaml.cs" Line="18" Column="17" />
+      <File FileName="monSFest/Models/Item.cs" Line="12" Column="17" />
+      <File FileName="monSFest/Pages/LoginPage.xaml" Line="53" Column="1" />
+      <File FileName="monSFest/Views/ItemDetailPage.xaml.cs" Line="22" Column="44" />
+      <File FileName="monSFest/Pages/WebPageRenderer.xaml" Line="6" Column="1" />
+      <File FileName="monSFest/Pages/WebPageRenderer.xaml.cs" Line="20" Column="31" />
+      <File FileName="monSFest/LoginControls/LoginPage.xaml" Line="7" Column="1" />
       <File FileName="monSFest/Views/ItemDetailPage.xaml" Line="27" Column="1" />
-      <File FileName="monSFest/Views/AboutPage.xaml" Line="62" Column="1" />
-      <File FileName="monSFest/Views/InitialPleaseWait.xaml" Line="25" Column="19" />
-      <File FileName="Droid/SplashActivity.cs" Line="26" Column="6" />
-      <File FileName="monSFest/App.xaml" Line="19" Column="1" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
-      <File FileName="monSFest/WebServices/Webservice.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.monSFest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DFE9F6B6-5DFB-4205-809F-4E016E3E3E63">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.monSFest.iOS>
+  <MonoDevelop.Ide.ItemProperties.monSFest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FD52E5B1-8D93-49F5-9A8F-28D85D4B1BA2" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.monSFest.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.monSFest.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>

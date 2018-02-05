@@ -43,6 +43,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)LoginControls\UserInfos.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LoginControls\ConnectionInfos.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entity\EntityModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\EntityModelErrorBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\ErrorCodeJSON.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonParsing\GetMobileUsersJSON.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\WebPageRenderer.xaml.cs">
+      <DependentUpon>WebPageRenderer.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
@@ -56,10 +65,19 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)LoginControls\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\WebPageRenderer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)LoginControls\" />
     <Folder Include="$(MSBuildThisFileDirectory)WebServices\" />
     <Folder Include="$(MSBuildThisFileDirectory)Entity\" />
+    <Folder Include="$(MSBuildThisFileDirectory)JsonParsing\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Repository\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
 </Project>
