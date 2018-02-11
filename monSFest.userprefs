@@ -1,26 +1,14 @@
-﻿<Properties StartupConfiguration="{BB74E22B-E3E3-4BFD-A848-A98A9D3643EB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/WebServices/Webservice.cs">
+﻿<Properties StartupConfiguration="{7BD04908-73A0-4BA6-9214-BF2E6A9D349B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/DataRouters/DatabaseManager.cs">
     <Files>
-      <File FileName="monSFest/Views/MainPage.cs" Line="7" Column="35" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="monSFest/Views/InitialPleaseWait.xaml.cs" Line="22" Column="51" />
-      <File FileName="monSFest/Views/InitialPleaseWait.xaml" Line="28" Column="19" />
-      <File FileName="monSFest/Pages/LoginPage.xaml.cs" Line="33" Column="72" />
-      <File FileName="monSFest/WebServices/Webservice.cs" Line="785" Column="1" />
-      <File FileName="monSFest/JsonParsing/GetMobileUsersJSON.cs" Line="10" Column="15" />
-      <File FileName="monSFest/LoginControls/ConnectionInfos.cs" Line="64" Column="56" />
-      <File FileName="monSFest/LoginControls/UserInfos.cs" Line="35" Column="35" />
-      <File FileName="monSFest/Views/NewItemPage.xaml.cs" Line="18" Column="17" />
-      <File FileName="monSFest/Models/Item.cs" Line="12" Column="17" />
-      <File FileName="monSFest/Pages/LoginPage.xaml" Line="53" Column="1" />
-      <File FileName="monSFest/Views/ItemDetailPage.xaml.cs" Line="22" Column="44" />
-      <File FileName="monSFest/Pages/WebPageRenderer.xaml" Line="6" Column="1" />
-      <File FileName="monSFest/Pages/WebPageRenderer.xaml.cs" Line="20" Column="31" />
-      <File FileName="monSFest/LoginControls/LoginPage.xaml" Line="7" Column="1" />
-      <File FileName="monSFest/Views/ItemDetailPage.xaml" Line="27" Column="1" />
+      <File FileName="Droid/SQLite_Droid.cs" Line="8" Column="26" />
+      <File FileName="monSFest/Interfaces/ISQLite.cs" Line="2" Column="24" />
+      <File FileName="monSFest/Pages/LoginPage.xaml.cs" Line="118" Column="44" />
+      <File FileName="monSFest/DataRouters/DatabaseManager.cs" Line="44" Column="17" />
+      <File FileName="monSFest/Views/MainPage.cs" Line="71" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

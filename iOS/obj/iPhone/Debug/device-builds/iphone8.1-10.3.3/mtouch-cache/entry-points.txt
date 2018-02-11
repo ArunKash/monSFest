@@ -1,0 +1,27 @@
+Function=xamarin_timezone_get_data
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/mscorlib.dll
+Function=CreateZStream
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/System.dll
+Function=UIApplicationMain
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=mono_pmip

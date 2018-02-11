@@ -1,6 +1,9 @@
 ﻿using System;
 using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
+using System.Threading.Tasks;
+using monSFest.DataRouters;
+using monSFest.Views;
 
 namespace monSFest
 {
@@ -8,13 +11,16 @@ namespace monSFest
     {
         public MainPage()
         {
+
+            //Task<bool> success = DatabaseManager.InitialSync(Navigation);
+            //Navigation.PopAllPopupAsync();
             Page itemsPage, aboutPage = null;
             //INavigation Navigation = new INavigation();
             try
             {
                 //code to initiate popup
                 System.Diagnostics.Debug.WriteLine("Nav" + Navigation);
-                Navigation.PushPopupAsync(new InitialPleaseWait("Getting Started.."));
+                //Navigation.PushPopupAsync(new InitialPleaseWait("Getting Started.."));
             }
             catch{
                 System.Diagnostics.Debug.WriteLine("Nope");
@@ -22,7 +28,7 @@ namespace monSFest
             switch (Device.RuntimePlatform)
             {
                 case Device.iOS:
-                    itemsPage = new NavigationPage(new ItemsPage())
+                    itemsPage = new NavigationPage(new ContactsPage())
                     {
                         Title = "Contacts"
                     };
@@ -35,7 +41,8 @@ namespace monSFest
                     aboutPage.Icon = "tab_about.png";
                     break;
                 default:
-                    itemsPage = new ItemsPage()
+                    //To be changed
+                    itemsPage = new ContactsPage()
                     {
                         Title = "Contacts"
                     };
@@ -44,6 +51,7 @@ namespace monSFest
                     {
                         Title = "About"
                     };
+
                     break;
             }
 
@@ -61,6 +69,7 @@ namespace monSFest
         protected override void OnAppearing()
         {
             base.OnAppearing();
+
             App.Current.MainPage.Navigation.PopAllPopupAsync();
 
         }

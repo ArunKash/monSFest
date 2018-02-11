@@ -20,3 +20,10 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+SQLite.Net.Async
+SQLite.Net
+SQLite.Net.Platform.XamarinAndroid
+MvvmCross.Platform
+MvvmCross.Platform.Droid
+MvvmCross.Plugins.PhoneCall
+MvvmCross.Plugins.PhoneCall.Droid

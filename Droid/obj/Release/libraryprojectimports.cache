@@ -1,26 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <Jars></Jars>
+  <Jars>
+    <Jar>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/0/jl/formsviewgroup.jar</Jar>
+    <Jar>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/7/jl/okhttp-2.3.0-jar-with-dependencies.jar</Jar>
+  </Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Plugin.Connectivity/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Rg.Plugins.Popup.Droid/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Rg.Plugins.Popup.Platform/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/1/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/11/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/12/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/15/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/26/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/27/jl/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj/Release/__library_projects__/Plugin.Connectivity/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/__library_projects__/Rg.Plugins.Popup.Droid/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/__library_projects__/Rg.Plugins.Popup.Platform/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/__library_projects__/Xamarin.Forms.Platform/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/1/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/11/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/12/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/15/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/26/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Release/lp/27/jl/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Rg.Plugins.Popup.Droid.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Rg.Plugins.Popup.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/526721/Documents/Personal POC/monSFest/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/1.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/11.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/12.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/15.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/26.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Release/lp/27.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

@@ -6,8 +6,6 @@
 	<string>monSFest</string>
 	<key>CFBundleName</key>
 	<string>monSFest</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.cognizant.monSFest</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -45,5 +43,7 @@
 	<string>UIStatusBarStyleLightContent</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>CFBundleIdentifier</key>
+	<string>com.cognizant.Monsfest</string>
 </dict>
 </plist>

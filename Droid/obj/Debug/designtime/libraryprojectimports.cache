@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj/Debug/lp/0/jl/formsviewgroup.jar</Jar>
-    <Jar>obj/Debug/lp/3/jl/okhttp-2.3.0-jar-with-dependencies.jar</Jar>
     <Jar>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/0/jl/formsviewgroup.jar</Jar>
     <Jar>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/3/jl/okhttp-2.3.0-jar-with-dependencies.jar</Jar>
   </Jars>
@@ -11,6 +9,7 @@
     <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/5/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/7/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/8/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/24/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/19/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/20/jl/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
@@ -19,6 +18,7 @@
     <ResolvedAssetDirectory>obj/Debug/lp/5/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/lp/7/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/lp/8/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/lp/24/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/lp/19/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/lp/20/jl/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
@@ -28,6 +28,7 @@
     <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/5.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/7.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/8.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/24.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/19.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/lp/20.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>

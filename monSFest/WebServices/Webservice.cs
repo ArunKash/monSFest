@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using Xamarin.Forms;
 using System.Threading;
 using ModernHttpClient;
+using monSFest.Models;
 
 //using Salesforce;
 //using InventoryManager.Models;
@@ -20,6 +21,8 @@ using ModernHttpClient;
 using System.Linq;
 using monSFest.LoginControls;
 using monSFest.JsonParsing;
+using System.Linq.Expressions;
+using monSFest.DataRouters;
 namespace monSFest.WebServices
 {
     
@@ -741,6 +744,7 @@ namespace monSFest.WebServices
                     LastResultString = "Infos sended to Connect to Salesforce:" + Environment.NewLine +
                                        "ConsumerKey: " + sfdcConsumerKey + Environment.NewLine +
                                        "ConsumerSecret: " + sfdcConsumerSecret + Environment.NewLine +
+
                                        "UserName: " + sfdcUserName + Environment.NewLine +
                                        "Password: " + sfdcPassword + Environment.NewLine +
                                        "Token: " + sfdcToken + Environment.NewLine + Environment.NewLine +
@@ -776,16 +780,167 @@ namespace monSFest.WebServices
 
                 string result = await GetData(DataServices,"query/?q=",request);
 
-                System.Diagnostics.Debug.WriteLine("Res"+result);
+                if(result.Length!=0) {
+                    bool completed = await ParseRequestAndStore(result);
+                    }
+
+                System.Diagnostics.Debug.WriteLine("Res "+result);
             }
             return connected;
 
         }
 
+        private async Task<bool> ParseRequestAndStore(string response){
 
+            JObject obj = JObject.Parse(response);
+            string errorType = (string)obj["error"];
+            string errorDesc = (string)obj["error_description"];
+            if (!StringIsNullOrEmpty(errorType) && !StringIsNullOrEmpty(errorDesc))
+            {
+                LastResultString = "Error type: " + errorType + " - Error Description: " + errorDesc;
+            }
+            else
+            {
+                var values = JsonConvert.DeserializeObject<Dictionary<string, object>>(response);
+                JArray records = (JArray)values["records"];
+                foreach(JObject record in records.Children<JObject>()) {
+                    JToken attribute = (JToken) record["attributes"];//Attribute
+                    string storeClass = (string)attribute["type"];
+
+                    ClassFinder modelClass = new ClassFinder(storeClass, record, attribute);
+                    modelClass.store = true;
+                    bool Success = await modelClass.findClassAndStoreAsync();
+                   
+                    //Parse(attribute,record);
+
+                }
+                return true;
+            }
+            return true;
+        }
+        //To parse
+        private void Parse(JToken attribute, JObject record){
+
+            string recordUpdateURL = (string)attribute["url"];
+            string param = (string)record["Name"];
+
+
+            //SOQL Properties that Come.
+            foreach (JProperty prop in record.Properties())
+            {
+                if (prop.Name != "attributes")
+                    System.Diagnostics.Debug.WriteLine("HERE " + (string)record[prop.Name]);
+            }
+            string soem = "";
+        }
         #endregion
 
         #region " Private Methods (API calls) GetData, PostData, PatchData "
+        public async Task<bool> Authenticate(EntityModelBase objPost){
+
+
+            HttpResponseMessage response;
+
+            bool connected = await Connect(LoginControls.ConnectionInfos.Instance);
+
+
+            string result = string.Empty;
+
+            if (string.IsNullOrEmpty(serviceUrl))
+            {
+                serviceUrl = UserInfos.Instance.instance_url;
+            }
+
+            string restQuery = serviceUrl + "/services/apexrest/Monsfest/mobileUsers/";
+            LastQueryURL = restQuery;
+
+            // HttpClient queryClient = new HttpClient();
+
+            HttpClient queryClient = null;
+            if (Device.OS == TargetPlatform.iOS)
+            {
+                queryClient = new HttpClient();
+            }
+            else
+            {
+                queryClient = new HttpClient(new NativeMessageHandler());
+            }
+
+            queryClient.Timeout = TimeSpan.FromMinutes(5);
+
+
+            //add token to header
+            queryClient.DefaultRequestHeaders.Add(AutorizationWord, BearerWord + UserInfos.Instance.access_token);
+
+            //return JSON to the caller
+            queryClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(AppJSonWord));
+
+            //queryClient.DefaultRequestHeaders.
+
+            // SerializeObject
+            string postBody = JsonConvert.SerializeObject(objPost);
+
+            // Body Content JSON Values
+            StringContent bodyContent = new StringContent(postBody, Encoding.UTF8, AppJSonWord);
+
+
+            {
+                System.Diagnostics.Debug.WriteLine("PostData - restQuery - " + restQuery);
+                System.Diagnostics.Debug.WriteLine("PostData - access_token - " + UserInfos.Instance.access_token);
+            }
+
+            //if (UserInfos.Instance.IsRefreshing)
+            //{
+            //    if (AppConstants.ENABLE_LOGGING)
+            //    {
+            //        System.Diagnostics.Debug.WriteLine("PostData - UserInfos.Instance.IsRefreshing - " + UserInfos.Instance.IsRefreshing.ToString());
+            //    }
+            //    await Task.Delay(3000);
+            //    if (AppConstants.ENABLE_LOGGING)
+            //    {
+            //        System.Diagnostics.Debug.WriteLine("PostData - UserInfos.Instance.IsRefreshing - after 3 seconds" + UserInfos.Instance.IsRefreshing.ToString());
+            //    }
+            //}
+
+            //call endpoint async
+            try
+            {
+                response = await queryClient.PostAsync(restQuery, bodyContent);
+                string responseString = await response.Content.ReadAsStringAsync();
+
+                if (!StringIsNullOrEmpty(responseString))
+                {
+                    JObject obj = JObject.Parse(responseString);
+
+                    string errorType = (string)obj["error"];
+                    string errorDesc = (string)obj["error_description"];
+
+                    if (!StringIsNullOrEmpty(errorType) && !StringIsNullOrEmpty(errorDesc))
+                    {
+                        isConnected = false;
+                        LastResultString = "Error type: " + errorType + " - Error Description: " + errorDesc;
+                    }
+                    else
+                    {
+                        if("good" == (string)obj["status"])
+                        {
+                            return true;
+                        }
+                        else {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch(Exception e) {
+                
+            }
+
+            return false;
+        }
+
+
+
         /// <summary>
         /// Get Data aSync
         /// </summary>

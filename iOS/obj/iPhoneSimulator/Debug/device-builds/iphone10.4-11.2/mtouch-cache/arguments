@@ -25,17 +25,31 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Platform.5.6.3/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Platform.5.6.3/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Plugin.PhoneCall.5.6.3/lib/Xamarin.iOS10/MvvmCross.Plugins.PhoneCall.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Plugin.PhoneCall.5.6.3/lib/Xamarin.iOS10/MvvmCross.Plugins.PhoneCall.iOS.dll \
+	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
-	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.3.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \
-	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.3.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll \
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/SQLite.Net.Async-PCL.3.1.1/lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.Async.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/SQLite.Net.Core-PCL.3.1.1/lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/SQLite.Net-PCL.3.1.1/lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -331,17 +345,31 @@
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/modernhttpclient.2.4.2/lib/Xamarin.iOS10/ModernHttpClient.dll \
 	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Platform.5.6.3/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Platform.5.6.3/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Plugin.PhoneCall.5.6.3/lib/Xamarin.iOS10/MvvmCross.Plugins.PhoneCall.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/MvvmCross.Plugin.PhoneCall.5.6.3/lib/Xamarin.iOS10/MvvmCross.Plugins.PhoneCall.iOS.dll \
+	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
-	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.3.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll \
 	-r \
-	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.2.3.0/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xam.Plugin.Connectivity.3.1.1/lib/Xamarin.iOS10/Plugin.Connectivity.dll \
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll \
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/SQLite.Net.Async-PCL.3.1.1/lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.Async.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/SQLite.Net.Core-PCL.3.1.1/lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll \
+	-r \
+	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/SQLite.Net-PCL.3.1.1/lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll \
 	-r \
 	/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \

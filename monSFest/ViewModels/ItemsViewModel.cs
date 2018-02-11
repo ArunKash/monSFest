@@ -14,7 +14,7 @@ namespace monSFest
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Items";
             Items = new ObservableCollection<Contact>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

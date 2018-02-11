@@ -52,6 +52,22 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\WebPageRenderer.xaml.cs">
       <DependentUpon>WebPageRenderer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AccountModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataRouters\ClassFinder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ISQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataRouters\SQLClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataRouters\Repository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataRouters\DatabaseManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\AuthEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ContactsPage.xaml.cs">
+      <DependentUpon>ContactsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ContactsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ContactDetailPage.xaml.cs">
+      <DependentUpon>ContactDetailPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
@@ -71,6 +87,14 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\WebPageRenderer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ContactsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\ContactDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)LoginControls\" />
@@ -79,5 +103,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)JsonParsing\" />
     <Folder Include="$(MSBuildThisFileDirectory)Repository\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataRouters\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
   </ItemGroup>
 </Project>

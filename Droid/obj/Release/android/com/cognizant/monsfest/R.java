@@ -2560,8 +2560,10 @@ containing a value of this type.
         public static final int mr_ic_pause_light=0x7f02009f;
         public static final int mr_ic_play_dark=0x7f0200a0;
         public static final int mr_ic_play_light=0x7f0200a1;
-        public static final int notification_template_icon_bg=0x7f0200a3;
-        public static final int xamarin_logo=0x7f0200a2;
+        public static final int notification_template_icon_bg=0x7f0200a5;
+        public static final int splash_screen=0x7f0200a2;
+        public static final int splash_screen1=0x7f0200a3;
+        public static final int xamarin_logo=0x7f0200a4;
     }
     public static final class id {
         public static final int action0=0x7f07008b;
@@ -2795,6 +2797,8 @@ containing a value of this type.
         public static final int toolbar=0x7f030038;
     }
     public static final class string {
+        public static final int ApplicationName=0x7f080027;
+        public static final int Hello=0x7f080026;
         public static final int abc_action_bar_home_description=0x7f08000f;
         public static final int abc_action_bar_home_description_format=0x7f080010;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f080011;
@@ -2817,6 +2821,7 @@ containing a value of this type.
         public static final int appbar_scrolling_view_behavior=0x7f080023;
         public static final int bottom_sheet_behavior=0x7f080024;
         public static final int character_counter_pattern=0x7f080025;
+        public static final int library_name=0x7f080028;
         public static final int mr_button_content_description=0x7f080000;
         public static final int mr_chooser_searching=0x7f080001;
         public static final int mr_chooser_title=0x7f080002;
@@ -2992,6 +2997,7 @@ containing a value of this type.
         /**  Base theme applied no matter what API 
          */
         public static final int MyTheme_Base=0x7f0a0173;
+        public static final int MyTheme_Splash=0x7f0a0175;
         public static final int Platform_AppCompat=0x7f0a0032;
         public static final int Platform_AppCompat_Light=0x7f0a0033;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f0a0095;
