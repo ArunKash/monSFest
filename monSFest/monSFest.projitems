@@ -68,10 +68,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ContactDetailPage.xaml.cs">
       <DependentUpon>ContactDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\EventsPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ChatsPage.xaml.cs">
       <DependentUpon>ChatsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EventsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IdeaModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IdeaViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\EventPage.xaml.cs">
+      <DependentUpon>EventPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EventViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
@@ -99,11 +105,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)EventsPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ChatsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ChatsPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\EventPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

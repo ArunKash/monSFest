@@ -119,7 +119,6 @@
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/bin/Debug/MvvmCross.Plugins.PhoneCall.dll.mdb
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/bin/Debug/MvvmCross.Plugins.PhoneCall.Droid.pdb
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/bin/Debug/MvvmCross.Plugins.PhoneCall.Droid.dll.mdb
-/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.csprojResolveAssemblyReference.cache
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.csproj.CoreCompileInputs.cache
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Views.AboutPage.xaml.g.cs
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Views.ItemDetailPage.xaml.g.cs
@@ -132,6 +131,8 @@
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Pages.WebPageRenderer.xaml.g.cs
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Views.ContactsPage.xaml.g.cs
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Pages.ContactDetailPage.xaml.g.cs
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.ChatsPage.xaml.g.cs
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Pages.EventPage.xaml.g.cs
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.dll
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.pdb
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/android/bin/com.cognizant.monSFest.apk
@@ -147,14 +148,13 @@
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/splash_screen1.png
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/splash_screen.png
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/contacts.png
-/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/R.cs.flag
-/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/uploadflags.txt
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/contacts1.png
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/about.png
-/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.EventsPage.xaml.g.cs
-/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.ChatsPage.xaml.g.cs
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/events.png
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/chats.png
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/R.cs.flag
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/uploadflags.txt
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.csprojResolveAssemblyReference.cache
 bin/Debug/Mono.Android.pdb
 obj/Debug/linksrc/FormsViewGroup.dll.mdb
 obj/Debug/linksrc/ModernHttpClient.dll.mdb

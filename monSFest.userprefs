@@ -1,35 +1,67 @@
 ﻿<Properties StartupConfiguration="{7BD04908-73A0-4BA6-9214-BF2E6A9D349B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/ViewModels/BaseViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/IdeaViewModel.cs">
     <Files>
-      <File FileName="Droid/SQLite_Droid.cs" Line="8" Column="26" />
-      <File FileName="monSFest/Interfaces/ISQLite.cs" Line="2" Column="24" />
-      <File FileName="monSFest/Pages/LoginPage.xaml.cs" Line="118" Column="44" />
-      <File FileName="monSFest/DataRouters/DatabaseManager.cs" Line="49" Column="61" />
-      <File FileName="monSFest/Views/MainPage.cs" Line="96" Column="66" />
-      <File FileName="Droid/obj/Debug/monSFest.Droid..Users.cognizanttechnologysolutions.Documents.GitHub.monSFest.monSFest.Views.ContactsPage.xaml.g.cs" Line="16" Column="26" />
-      <File FileName="monSFest/Views/ContactsPage.xaml.cs" Line="40" Column="40" />
-      <File FileName="monSFest/Views/ContactsPage.xaml" Line="9" Column="22" />
-      <File FileName="monSFest/EventsPage.xaml" Line="8" Column="90" />
-      <File FileName="monSFest/Pages/EventsPage.xaml.cs" Line="21" Column="9" />
-      <File FileName="monSFest/ChatsPage.xaml" Line="2" Column="158" />
-      <File FileName="monSFest/ChatsPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="monSFest/Views/AboutPage.xaml.cs" Line="7" Column="26" />
-      <File FileName="monSFest/Views/AboutPage.xaml" Line="2" Column="194" />
+      <File FileName="monSFest/Views/MainPage.cs" Line="90" Column="1" />
+      <File FileName="monSFest/Views/ContactsPage.xaml" Line="34" Column="1" />
       <File FileName="monSFest/Pages/ContactDetailPage.xaml.cs" Line="13" Column="26" />
-      <File FileName="monSFest/Pages/ContactDetailPage.xaml" Line="11" Column="72" />
-      <File FileName="monSFest/Models/UserModel.cs" Line="20" Column="59" />
-      <File FileName="monSFest/Views/ItemsPage.xaml" Line="7" Column="17" />
-      <File FileName="monSFest/Views/ItemsPage.xaml.cs" Line="17" Column="57" />
-      <File FileName="monSFest/Views/NewItemPage.xaml.cs" Line="7" Column="26" />
-      <File FileName="monSFest/ViewModels/ItemsViewModel.cs" Line="39" Column="41" />
-      <File FileName="monSFest/Services/IDataStore.cs" Line="12" Column="30" />
-      <File FileName="monSFest/ViewModels/BaseViewModel.cs" Line="12" Column="56" />
-      <File FileName="monSFest/Services/MockDataStore.cs" Line="8" Column="18" />
+      <File FileName="monSFest/Pages/ContactDetailPage.xaml" Line="33" Column="1" />
+      <File FileName="monSFest/Pages/LoginPage.xaml.cs" Line="143" Column="17" />
+      <File FileName="monSFest/ViewModels/ContactsViewModel.cs" Line="38" Column="5" />
+      <File FileName="monSFest/App.xaml.cs" Line="12" Column="27" />
+      <File FileName="monSFest/Models/IdeaModel.cs" Line="20" Column="50" />
+      <File FileName="monSFest/ChatsPage.xaml.cs" Line="28" Column="20" />
+      <File FileName="monSFest/IdeaViewModel.cs" Line="14" Column="39" />
+      <File FileName="monSFest/Views/ContactsPage.xaml.cs" Line="61" Column="5" />
+      <File FileName="Droid/MainActivity.cs" Line="15" Column="6" />
+      <File FileName="monSFest/Views/NewItemPage.xaml" Line="13" Column="118" />
+      <File FileName="monSFest/Views/AboutPage.xaml" Line="21" Column="26" />
+      <File FileName="monSFest/ViewModels/ItemsViewModel.cs" Line="26" Column="16" />
+      <File FileName="monSFest/WebServices/Webservice.cs" Line="774" Column="33" />
+      <File FileName="monSFest/Pages/EventPage.xaml.cs" Line="58" Column="10" NotebookId="1" />
+      <File FileName="monSFest/ViewModels/EventViewModel.cs" Line="18" Column="10" NotebookId="1" />
+      <File FileName="monSFest/Pages/EventPage.xaml" Line="29" Column="23" NotebookId="1" />
+      <File FileName="monSFest/Models/EventsModel.cs" Line="20" Column="44" NotebookId="1" />
+      <File FileName="monSFest/ViewModels/ItemDetailViewModel.cs" Line="7" Column="24" NotebookId="1" />
+      <File FileName="monSFest/Views/NewItemPage.xaml.cs" Line="31" Column="48" NotebookId="1" />
+      <File FileName="monSFest/ChatsPage.xaml" Line="18" Column="162" NotebookId="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="monSFest" expanded="True">
+            <Node name="monSFest" expanded="True">
+              <Node name="DataRouters" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="ContactDetailPage.xaml" expanded="True" />
+                <Node name="EventPage.xaml" expanded="True" />
+                <Node name="LoginPage.xaml" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="ContactsPage.xaml" expanded="True" />
+                <Node name="ItemsPage.xaml" expanded="True" />
+                <Node name="NewItemPage.xaml" expanded="True" />
+              </Node>
+              <Node name="WebServices" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="ChatsPage.xaml" expanded="True" />
+              <Node name="IdeaViewModel.cs" selected="True" />
+            </Node>
+            <Node name="monSFest.Droid" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/monSFest/Views/MainPage.cs" relfile="monSFest/Views/MainPage.cs" line="91" column="1" />
+      <Breakpoint file="/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/monSFest/Views/MainPage.cs" relfile="monSFest/Views/MainPage.cs" line="89" column="1" />
+      <Breakpoint file="/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/monSFest/IdeaViewModel.cs" relfile="monSFest/IdeaViewModel.cs" line="29" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.monSFest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FD52E5B1-8D93-49F5-9A8F-28D85D4B1BA2" />

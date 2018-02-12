@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using monSFest.DataRouters;
 using monSFest.Views;
+using monSFest.Pages;
 
 namespace monSFest
 {
@@ -25,56 +26,58 @@ namespace monSFest
             catch{
                 System.Diagnostics.Debug.WriteLine("Nope");
             }
-            switch (Device.RuntimePlatform)
+            try
             {
-                case Device.iOS:
-                    eventsPage = new NavigationPage(new EventsPage())
-                    {
-                        Title = "Events"
-                    };
-                    itemsPage = new NavigationPage(new ContactsPage())
-                    {
-                        Title = "Contacts"
-                    };
+                switch (Device.RuntimePlatform)
+                {
+                    case Device.iOS:
+                        eventsPage = new NavigationPage(new EventPage())
+                        {
+                            Title = "Events"
+                        };
+                        itemsPage = new NavigationPage(new ContactsPage())
+                        {
+                            Title = "Contacts"
+                        };
 
-                    aboutPage = new NavigationPage(new AboutPage())
-                    {
-                        Title = "About"
-                    };
-                    chatsPage = new NavigationPage(new ChatsPage())
-                    {
-                        Title = "Chats"
-                    };
-                    itemsPage.Icon = "tab_feed.png";
-                    aboutPage.Icon = "tab_about.png";
-                    break;
-                default:
-                    //To be changed
-                    eventsPage = new NavigationPage( new EventsPage())
-                    {
-                        //Title = "Events"
-                    };
-                    eventsPage.Icon = "events.png";
-                    itemsPage = new NavigationPage(new ContactsPage())
-                    {
-                       // Title = "Contacts"
-                    };
-                    itemsPage.Icon = "contacts1.png";
-                    chatsPage = new NavigationPage(new ChatsPage())
-                    {
-                        //Title = "Chats"
-                    };
-                    chatsPage.Icon = "chats.png";
-                    aboutPage = new NavigationPage(new AboutPage())
-                    {
-                        //Title = "About"
-                    };
+                        aboutPage = new NavigationPage(new AboutPage())
+                        {
+                            Title = "About"
+                        };
+                        chatsPage = new NavigationPage(new ChatsPage())
+                        {
+                            Title = "Chats"
+                        };
+                        itemsPage.Icon = "tab_feed.png";
+                        aboutPage.Icon = "tab_about.png";
+                        break;
+                    default:
+                        //To be changed
+                        eventsPage = new NavigationPage(new EventPage())
+                        {
+                            //Title = "Events"
+                        };
+                        eventsPage.Icon = "events.png";
+                        itemsPage = new NavigationPage(new ContactsPage())
+                        {
+                            // Title = "Contacts"
+                        };
+                        itemsPage.Icon = "contacts1.png";
+                        chatsPage = new NavigationPage(new ChatsPage())
+                        {
+                            //Title = "Chats"
+                        };
+                        chatsPage.Icon = "chats.png";
+                        aboutPage = new NavigationPage(new AboutPage())
+                        {
+                            //Title = "About"
+                        };
 
-                    aboutPage.Icon = "about.png";
-                    break;
+                        aboutPage.Icon = "about.png";
+                        break;
 
-            }
-
+                }
+           
             Children.Add(eventsPage);
             Children.Add(itemsPage);
            
@@ -82,6 +85,11 @@ namespace monSFest
             Children.Add(aboutPage);
 
             Title = Children[0].Title;
+            }
+            catch (Exception e)
+            {
+
+            }
         }
 
         protected override void OnCurrentPageChanged()
