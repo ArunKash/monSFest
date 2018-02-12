@@ -1,24 +1,25 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using monSFest.Models;
 
 namespace monSFest
 {
     public partial class NewItemPage : ContentPage
     {
-        public Contact Item { get; set; }
+        public Idea Item { get; set; }
 
         public NewItemPage()
         {
             InitializeComponent();
 
-            Item = new Contact
+            Item = new Idea
             {
-                Name = " ",
-                employeeID = " ",
-                Description = " ",
-                phoneNumber = " ",
-                whatsApp = " ",
+                url = " ",
+                tags = " ",
+                content = " ",
+                topic = " ",
+                //whatsApp = " ",
                 //Dob to be date picker
             };
 
@@ -27,7 +28,7 @@ namespace monSFest
 
         async void Save_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "AddItem", Item);
+            MessagingCenter.Send(this, "AddIdea", Item);
             await Navigation.PopToRootAsync();
         }
     }

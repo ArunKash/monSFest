@@ -5,15 +5,13 @@
 	</ContentPage.ToolbarItems>
 	<ContentPage.Content>
 		<StackLayout Spacing="20" Padding="15">
-			<Label Text="Name" FontSize="Medium" />
-			<Entry Text="{Binding Item.Name}" FontSize="Small" FontAttributes="Bold"  Margin="0"  />
-			<Label Text="Description" FontSize="Medium"  />
-			<Entry Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
-            <Label Text="Phone" FontSize="Medium" />
-            <Entry Text="{Binding Item.phoneNumber}" FontSize="Small" FontAttributes="Bold"  Margin="0"  />
-            <Label Text="WhatsApp Contact" FontSize="Medium"  />
-            <Entry Text="{Binding Item.whatsApp}" FontSize="Small" Margin="0" />
-        
+			<Label Text="Topic" FontSize="Medium" />
+			<Entry Text="{Binding Item.topic}" FontSize="Small" FontAttributes="Bold"  Margin="0"  />
+			<Label Text="Tag" FontSize="Medium"  />
+			<Entry Text="{Binding Item.tags}" FontSize="Small" Margin="0" />
+            <Label Text="Idea" FontSize="Medium" />
+            <Entry Text="{Binding Item.content}" FontSize="Small" FontAttributes="Bold"  Margin="0" HeightRequest="50" />
+           
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

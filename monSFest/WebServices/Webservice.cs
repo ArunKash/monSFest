@@ -771,6 +771,10 @@ namespace monSFest.WebServices
         }
         #endregion
         #region "SOQL request maker"
+        //public async Task<bool> PostIdea(Idea idea){
+            
+        //    return true;
+        //}
         public async Task<bool> MakeRequest(string query) {
 
             bool connected = await Connect(LoginControls.ConnectionInfos.Instance);

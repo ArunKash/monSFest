@@ -76,6 +76,62 @@ namespace monSFest.DataRouters
 
                     break;
 
+                case "Events__c":
+
+                    EventsModel eventsModelManager = new EventsModel(attribute, record);
+                    Repository<Events> EventsRepo = new Repository<Events>();
+                    var DatabaseEvents = await EventsRepo.AllAsync();
+
+                    var EventMatches = DatabaseEvents.Where(a => a.url == eventsModelManager.events.url).ToList();
+
+                    if (EventMatches.Count() == 0)
+                    {
+                        int completedCount = await EventsRepo.InsertAsync(eventsModelManager.events);
+
+                        if (completedCount != 0)
+                        {
+                            System.Diagnostics.Debug.WriteLine(completedCount + "event records inserted");
+                        }
+                    }
+                    else
+                    {
+                        int UpdatedCount = await EventsRepo.UpdateAsync(eventsModelManager.events);
+                        if (UpdatedCount != 0)
+                        {
+                            System.Diagnostics.Debug.WriteLine(UpdatedCount + "event records Updated");
+                        }
+                    }
+
+
+                    break;
+                case "Idea__c":
+
+                    IdeaModel IdeaModelManager = new IdeaModel(attribute, record);
+                    Repository<Idea> IdeaRepo = new Repository<Idea>();
+                    var DatabaseIdea = await IdeaRepo.AllAsync();
+
+                    var IdeaMatches = DatabaseIdea.Where(a => a.url == IdeaModelManager.idea.url).ToList();
+
+                    if (IdeaMatches.Count() == 0)
+                    {
+                        int completedCount = await IdeaRepo.InsertAsync(IdeaModelManager.idea);
+
+                        if (completedCount != 0)
+                        {
+                            System.Diagnostics.Debug.WriteLine(completedCount + "event records inserted");
+                        }
+                    }
+                    else
+                    {
+                        int UpdatedCount = await IdeaRepo.UpdateAsync(IdeaModelManager.idea);
+                        if (UpdatedCount != 0)
+                        {
+                            System.Diagnostics.Debug.WriteLine(UpdatedCount + "event records Updated");
+                        }
+                    }
+
+                    break;
+                    
 
             }
             return true;

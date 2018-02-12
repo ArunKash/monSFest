@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="monSFest.ChatsPage" Title = "Ideas">
-	<ContentPage.Content>
+<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked = "AddIdea_Clicked" />
+    </ContentPage.ToolbarItems>
+     <StackLayout >
+       <ListView x:Name="IdeaListView" ItemsSource="{Binding Idea}" VerticalOptions="FillAndExpand" HasUnevenRows = "false" RefreshCommand="{Binding LoadIdea}" IsPullToRefreshEnabled="true" CachingStrategy="RecycleElement"  RowHeight="150">
+       <ListView.ItemTemplate>
+       <DataTemplate>
+
+                    <ViewCell >
+                    <Frame Margin="0,0,2,3" OutlineColor="Black" HasShadow="true">
+                        
+                <StackLayout Padding="4">
+
+                           <Label Text = "{Binding topic}" LineBreakMode="CharacterWrap" Style="{DynamicResource ListItemTextStyle}" Font="Bold" FontSize="16"/>
+                           <Label Text ="{Binding tags}" LineBreakMode="CharacterWrap" Font="Intalics" FontSize="14"/>
+                                <Label Text = "{Binding content}" LineBreakMode="CharacterWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="12"/>
+
+                            
+                        </StackLayout> 
+                            </Frame>
+                        
+                        </ViewCell>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+    <ContentPage.Content>
 	</ContentPage.Content>
 </ContentPage>
