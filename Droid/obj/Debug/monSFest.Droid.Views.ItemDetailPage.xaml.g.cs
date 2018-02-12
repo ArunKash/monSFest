@@ -11,7 +11,8 @@
 namespace monSFest {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/526721/Documents/Personal POC/monSFest/monSFest/Views/ItemDetailPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/monSFest/Views/Item" +
+        "DetailPage.xaml")]
     public partial class ItemDetailPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

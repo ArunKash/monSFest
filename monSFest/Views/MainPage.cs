@@ -14,7 +14,7 @@ namespace monSFest
 
             //Task<bool> success = DatabaseManager.InitialSync(Navigation);
             //Navigation.PopAllPopupAsync();
-            Page itemsPage, aboutPage = null;
+            Page itemsPage, aboutPage, eventsPage, chatsPage = null;
             //INavigation Navigation = new INavigation();
             try
             {
@@ -28,6 +28,10 @@ namespace monSFest
             switch (Device.RuntimePlatform)
             {
                 case Device.iOS:
+                    eventsPage = new NavigationPage(new EventsPage())
+                    {
+                        Title = "Events"
+                    };
                     itemsPage = new NavigationPage(new ContactsPage())
                     {
                         Title = "Contacts"
@@ -37,25 +41,44 @@ namespace monSFest
                     {
                         Title = "About"
                     };
+                    chatsPage = new NavigationPage(new ChatsPage())
+                    {
+                        Title = "Chats"
+                    };
                     itemsPage.Icon = "tab_feed.png";
                     aboutPage.Icon = "tab_about.png";
                     break;
                 default:
                     //To be changed
-                    itemsPage = new ContactsPage()
+                    eventsPage = new NavigationPage( new EventsPage())
                     {
-                        Title = "Contacts"
+                        //Title = "Events"
+                    };
+                    eventsPage.Icon = "events.png";
+                    itemsPage = new NavigationPage(new ContactsPage())
+                    {
+                       // Title = "Contacts"
+                    };
+                    itemsPage.Icon = "contacts1.png";
+                    chatsPage = new NavigationPage(new ChatsPage())
+                    {
+                        //Title = "Chats"
+                    };
+                    chatsPage.Icon = "chats.png";
+                    aboutPage = new NavigationPage(new AboutPage())
+                    {
+                        //Title = "About"
                     };
 
-                    aboutPage = new AboutPage()
-                    {
-                        Title = "About"
-                    };
-
+                    aboutPage.Icon = "about.png";
                     break;
+
             }
 
+            Children.Add(eventsPage);
             Children.Add(itemsPage);
+           
+            Children.Add(chatsPage);
             Children.Add(aboutPage);
 
             Title = Children[0].Title;
@@ -70,7 +93,7 @@ namespace monSFest
         {
             base.OnAppearing();
 
-            App.Current.MainPage.Navigation.PopAllPopupAsync();
+            //App.Current.MainPage.Navigation.PopAllPopupAsync();
 
         }
     }

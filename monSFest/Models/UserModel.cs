@@ -17,7 +17,7 @@ namespace monSFest.Models
         {
             this.user = new User();
             user.Url = (string)attribute["url"];
-            user.name = (string)record["First_Name__c"]+(string)record["Last_Name__c"];
+            user.name = (string)record["First_Name__c"]+" "+(string)record["Last_Name__c"];
             user.empId = (int)record["Employee_ID__c"];
             user.capability = (string)record["Org__c"];
             user.mobileNumber = (string)record["Mobile_Number__c"] ;

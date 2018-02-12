@@ -11,7 +11,7 @@
 namespace monSFest {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/526721/Documents/Personal POC/monSFest/monSFest/App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/monSFest/App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

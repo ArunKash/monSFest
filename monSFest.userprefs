@@ -1,11 +1,30 @@
 ﻿<Properties StartupConfiguration="{7BD04908-73A0-4BA6-9214-BF2E6A9D349B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/DataRouters/DatabaseManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="monSFest/ViewModels/BaseViewModel.cs">
     <Files>
       <File FileName="Droid/SQLite_Droid.cs" Line="8" Column="26" />
       <File FileName="monSFest/Interfaces/ISQLite.cs" Line="2" Column="24" />
       <File FileName="monSFest/Pages/LoginPage.xaml.cs" Line="118" Column="44" />
-      <File FileName="monSFest/DataRouters/DatabaseManager.cs" Line="44" Column="17" />
-      <File FileName="monSFest/Views/MainPage.cs" Line="71" Column="32" />
+      <File FileName="monSFest/DataRouters/DatabaseManager.cs" Line="49" Column="61" />
+      <File FileName="monSFest/Views/MainPage.cs" Line="96" Column="66" />
+      <File FileName="Droid/obj/Debug/monSFest.Droid..Users.cognizanttechnologysolutions.Documents.GitHub.monSFest.monSFest.Views.ContactsPage.xaml.g.cs" Line="16" Column="26" />
+      <File FileName="monSFest/Views/ContactsPage.xaml.cs" Line="40" Column="40" />
+      <File FileName="monSFest/Views/ContactsPage.xaml" Line="9" Column="22" />
+      <File FileName="monSFest/EventsPage.xaml" Line="8" Column="90" />
+      <File FileName="monSFest/Pages/EventsPage.xaml.cs" Line="21" Column="9" />
+      <File FileName="monSFest/ChatsPage.xaml" Line="2" Column="158" />
+      <File FileName="monSFest/ChatsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="monSFest/Views/AboutPage.xaml.cs" Line="7" Column="26" />
+      <File FileName="monSFest/Views/AboutPage.xaml" Line="2" Column="194" />
+      <File FileName="monSFest/Pages/ContactDetailPage.xaml.cs" Line="13" Column="26" />
+      <File FileName="monSFest/Pages/ContactDetailPage.xaml" Line="11" Column="72" />
+      <File FileName="monSFest/Models/UserModel.cs" Line="20" Column="59" />
+      <File FileName="monSFest/Views/ItemsPage.xaml" Line="7" Column="17" />
+      <File FileName="monSFest/Views/ItemsPage.xaml.cs" Line="17" Column="57" />
+      <File FileName="monSFest/Views/NewItemPage.xaml.cs" Line="7" Column="26" />
+      <File FileName="monSFest/ViewModels/ItemsViewModel.cs" Line="39" Column="41" />
+      <File FileName="monSFest/Services/IDataStore.cs" Line="12" Column="30" />
+      <File FileName="monSFest/ViewModels/BaseViewModel.cs" Line="12" Column="56" />
+      <File FileName="monSFest/Services/MockDataStore.cs" Line="8" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

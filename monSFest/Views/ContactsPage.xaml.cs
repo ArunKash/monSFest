@@ -43,7 +43,7 @@ namespace monSFest.Views
             if (Device.RuntimePlatform == Device.iOS)
                 Navigation.PushAsync(new ContactDetailPage((User)e.SelectedItem));
             else
-                Navigation.PushModalAsync(new ContactDetailPage((User)e.SelectedItem));
+                Navigation.PushAsync(new ContactDetailPage((User)e.SelectedItem));
             contacListView.SelectedItem = null;
         }
     

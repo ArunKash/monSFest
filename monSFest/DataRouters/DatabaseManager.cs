@@ -33,6 +33,7 @@ namespace monSFest.DataRouters
 
         public static async Task<bool> InitialSync(INavigation navigation){
             //await navigation.PopAllPopupAsync();
+
             await navigation.PushPopupAsync(new InitialPleaseWait("Loading Contacts... "));
             bool success = await DatabaseManager.UsersSync();
             if(success) {

@@ -159,6 +159,11 @@
     <AndroidResource Include="Resources\drawable\monSFest.png" />
     <AndroidResource Include="Resources\drawable\splash_screen1.png" />
     <AndroidResource Include="Resources\drawable\splash_screen.png" />
+    <AndroidResource Include="Resources\drawable\contacts.png" />
+    <AndroidResource Include="Resources\drawable\contacts1.png" />
+    <AndroidResource Include="Resources\drawable\about.png" />
+    <AndroidResource Include="Resources\drawable\events.png" />
+    <AndroidResource Include="Resources\drawable\chats.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Values\" />
