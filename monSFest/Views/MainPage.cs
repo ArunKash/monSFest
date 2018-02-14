@@ -48,8 +48,10 @@ namespace monSFest
                         {
                             Title = "Chats"
                         };
-                        itemsPage.Icon = "tab_feed.png";
-                        aboutPage.Icon = "tab_about.png";
+                        itemsPage.Icon = "contacts3.png";
+                        aboutPage.Icon = "about3.png";
+                        eventsPage.Icon = "events3.png";
+                        chatsPage.Icon = "chats3.png";
                         break;
                     default:
                         //To be changed

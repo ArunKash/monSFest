@@ -63,7 +63,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Arun Prakash (MT536U8Y8U)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -171,6 +171,16 @@
     <BundleResource Include="Resources\monSFest%402x.png" />
     <BundleResource Include="Resources\monSFest%403x.png" />
     <BundleResource Include="Resources\monSFest.png" />
+    <BundleResource Include="Resources\about.png" />
+    <BundleResource Include="Resources\chats.png" />
+    <BundleResource Include="Resources\contacts.png" />
+    <BundleResource Include="Resources\contacts1.png" />
+    <BundleResource Include="Resources\events.png" />
+    <BundleResource Include="Resources\chats2.png" />
+    <BundleResource Include="Resources\events3.png" />
+    <BundleResource Include="Resources\chats3.png" />
+    <BundleResource Include="Resources\about3.png" />
+    <BundleResource Include="Resources\contacts3.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
