@@ -55,13 +55,25 @@ namespace monSFest.LoginControls
 		public ConnectionInfos()
 		{
 			//set OAuth key and secret variables
-			const string sfdcConsumerKeyDev = "3MVG9d8..z.hDcPLjjwItMD.QX0DI9eD.JHDvPna91GydFUThUKlqr.hPoEqF8nUHYukb.bJ9l3jxLRLVly53";
-			const string sfdcConsumerSecretDev = "3100585937607471396";
-            const string authUrl = "https://monsfest-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=";
-			//set to Force.com user account that has API access enabled
-			const string sfdcUserName = "mobile-users@monsfest.com";
-			const string sfdcPassword = "monSFest#2018";
-			const string sfdcToken = "9DuZ2Dy72BONlEF5QcoeEouX";
+            //OLD
+			//const string sfdcConsumerKeyDev = "3MVG9d8..z.hDcPLjjwItMD.QX0DI9eD.JHDvPna91GydFUThUKlqr.hPoEqF8nUHYukb.bJ9l3jxLRLVly53";
+			//const string sfdcConsumerSecretDev = "3100585937607471396";
+   //         const string authUrl = "https://monsfest-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=";
+			////set to Force.com user account that has API access enabled
+			//const string sfdcUserName = "mobile-users@monsfest.com";
+			//const string sfdcPassword = "monSFest#2018";
+			//const string sfdcToken = "9DuZ2Dy72BONlEF5QcoeEouX";
+
+            //NEW
+            const string sfdcConsumerKeyDev = "3MVG9d8..z.hDcPJ0IBVKy096JN6fM3xZk7EPKjWYjsK2mEp4NBwS2gHTuKolRy0voYokW9UX885CWINQVdnx";
+            const string sfdcConsumerSecretDev = "5747013541329980959";
+            const string authUrl = "https://templateapp-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=";
+            //set to Force.com user account that has API access enabled
+            const string sfdcUserName = "arun@ios.com";
+            const string sfdcPassword = "Monsanto@2";
+            const string sfdcToken = "Pei8kSvr7rod0M6zd5XPh5cEI";
+
+
 
 			//given by Dev Goyal for QA       
 			//const string sfdcConsumerKeyQA = "3MVG9pHRjzOBdkd8xU6Dxo9qLhrz78ob_A99x3EmZdw8fYzb83baLYTPLnaBFpy492pWJTpX9zdH9ftlBqjlI";

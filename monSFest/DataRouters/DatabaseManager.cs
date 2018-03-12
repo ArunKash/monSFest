@@ -74,16 +74,22 @@ namespace monSFest.DataRouters
             return success;
         }
         private static async Task<bool> UsersSync() {
-            bool success = await WebServices.Webservice.Instance.MakeRequest("SELECT  Cognizant_Mail__c,Employee_ID__c,First_Name__c,Last_Name__c,Mobile_Number__c,Org__c,Password__c FROM Users__c");
+
+            //bool success = await WebServices.Webservice.Instance.MakeRequest("Select name,email from User");
+
+            bool success = await WebServices.Webservice.Instance.MakeRequest("SELECT  Name,Cognizant_Mail__c,Employee_ID__c,Mobile_Number__c,Org__c,Password__c FROM Users__c");
             return success;
         }
         private static async Task<bool> EventsSync(){
 
-            bool success = await WebServices.Webservice.Instance.MakeRequest("Select name,type__c,content__c from Events__c");
+            bool success = true;
+           // bool success = await WebServices.Webservice.Instance.MakeRequest("Select name,type__c,content__c from Events__c");
             return success;
         }
         private static async Task<bool> IdeasSync(){
-            bool success = await WebServices.Webservice.Instance.MakeRequest("select content__c,tags__c,topic__c from Idea__c");
+           // bool success = await WebServices.Webservice.Instance.MakeRequest("select content__c,tags__c,topic__c from Idea__c");
+            bool success = true;
+
             return success;
 
         }
