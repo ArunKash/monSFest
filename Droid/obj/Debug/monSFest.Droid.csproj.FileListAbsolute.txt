@@ -119,6 +119,7 @@
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/bin/Debug/MvvmCross.Plugins.PhoneCall.dll.mdb
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/bin/Debug/MvvmCross.Plugins.PhoneCall.Droid.pdb
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/bin/Debug/MvvmCross.Plugins.PhoneCall.Droid.dll.mdb
+/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.csprojResolveAssemblyReference.cache
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.csproj.CoreCompileInputs.cache
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Views.AboutPage.xaml.g.cs
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.Views.ItemDetailPage.xaml.g.cs
@@ -154,7 +155,6 @@
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/res/drawable/chats.png
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/R.cs.flag
 /Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/uploadflags.txt
-/Users/cognizanttechnologysolutions/Documents/GitHub/monSFest/Droid/obj/Debug/monSFest.Droid.csprojResolveAssemblyReference.cache
 bin/Debug/Mono.Android.pdb
 obj/Debug/linksrc/FormsViewGroup.dll.mdb
 obj/Debug/linksrc/ModernHttpClient.dll.mdb
